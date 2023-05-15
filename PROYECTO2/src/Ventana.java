@@ -17,18 +17,19 @@ public class Ventana extends JFrame{
         CrearPaneles();
         CrearEtiquetas();
         CrearBotones();
-
+        CrearRadioBotones();
     }
     private void CrearPaneles(){
         panel = new JPanel();//creacion de un panel
 
         panel.setLayout(null);//desactiva el diseño para poder editar libremente las etiquetas
-        //panel.setBackground(Color.white);//color del panel
+        panel.setBackground(Color.pink);//color del panel
         this.getContentPane().add(panel);//que se muestre el panel en la ventana
     }
-    //etiqueta1-texto
+
 
     private void CrearEtiquetas(){
+       //etiqueta1-texto
         JLabel etiqueta = new JLabel("Hola nay",SwingConstants.LEFT);//creacion de etiqueta de texto y ubicacion del texto
         etiqueta.setBounds(500,100,300,200);//medidas y ubicacion de la etiqueta
         etiqueta.setForeground(Color.black);//color de la letra
@@ -53,11 +54,25 @@ public class Ventana extends JFrame{
 
         //boton2-imagen
         JButton boton2 = new JButton();
-        boton2.setBounds(100,200,100,40);
+        boton2.setBounds(100,150,100,40);
         //boton2.setBackground(Color.BLUE);//establecer color de fondo
         ImageIcon botonPagar = new ImageIcon("boton.jfif");
         boton2.setIcon(new ImageIcon(botonPagar.getImage().getScaledInstance(boton2.getWidth(),boton2.getHeight(),Image.SCALE_SMOOTH)));//se establece el tamaño igual al del boton
         panel.add(boton2);
 
+    }
+
+    private void CrearRadioBotones(){
+        JRadioButton radioBoton1 = new JRadioButton("Bebida", false);
+        radioBoton1.setBounds(100,200,100,40);
+        panel.add(radioBoton1);
+
+        JRadioButton radioBoton2 = new JRadioButton("Dulce", false);
+        radioBoton2.setBounds(100,250,100,40);
+        panel.add(radioBoton2);
+
+        ButtonGroup grupoRadio = new ButtonGroup();
+        grupoRadio.add(radioBoton1);
+        grupoRadio.add(radioBoton2);
     }
 }
