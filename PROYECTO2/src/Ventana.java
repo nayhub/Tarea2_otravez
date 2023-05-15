@@ -23,7 +23,7 @@ public class Ventana extends JFrame{
         panel = new JPanel();//creacion de un panel
 
         panel.setLayout(null);//desactiva el diseño para poder editar libremente las etiquetas
-        //panel.setBackground(Color.white);//color del panel
+        panel.setBackground(new Color(255, 185, 193)); //color del panel
         this.getContentPane().add(panel);//que se muestre el panel en la ventana
     }
     //etiqueta1-texto
