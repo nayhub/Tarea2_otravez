@@ -1,4 +1,5 @@
 import javax.swing.JFrame;
+import java.awt.*;
 
 public class Main {
 
@@ -10,6 +11,8 @@ public class Main {
         frame.setResizable(false); // no resize
         frame.setSize(1000,1000); // tamaño de x tamayo de y
         frame.setVisible(true); // hace el frame visible
+
+        frame.getContentPane().setBackground(new Color(255,182,193)); // color de fondo
 
     }
 }
