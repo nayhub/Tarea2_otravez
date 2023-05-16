@@ -132,9 +132,7 @@ public class Ventana extends JFrame {
               radioboton3.setEnabled(true);//activa el boton al dar click al radioboton1
               radioboton4.setEnabled(true);
               radioboton5.setEnabled(false);//desactiva el boton al dar click al radioboton1
-              radioboton5.setSelected(false);//si es que el boton esta seleccionado, al dar click al radioboton1 deja de estar seleccionado
               radioboton6.setEnabled(false);
-              radioboton6.setSelected(false);
             }
 
             @Override
@@ -144,12 +142,11 @@ public class Ventana extends JFrame {
 
             @Override
             public void mouseReleased(MouseEvent e) {//cuando se suelta el click
-                panel.add(radioboton4);
             }
 
             @Override
             public void mouseEntered(MouseEvent e) {//pasar el mouse por el boton
-                panel.add(radioboton3);
+
             }
 
             @Override
@@ -164,8 +161,6 @@ public class Ventana extends JFrame {
         @Override
         public void mouseClicked(MouseEvent e) {//evento de cuando se hace click
             radioboton3.setEnabled(false);
-            radioboton3.setSelected(false);
-            radioboton4.setEnabled(false);
             radioboton4.setEnabled(false);
             radioboton5.setEnabled(true);
             radioboton6.setEnabled(true);
@@ -179,12 +174,12 @@ public class Ventana extends JFrame {
 
         @Override
         public void mouseReleased(MouseEvent e) {//cuando se suelta el click
-            panel.add(radioboton4);
+
         }
 
         @Override
         public void mouseEntered(MouseEvent e) {//pasar el mouse por el boton
-            panel.add(radioboton3);
+
         }
 
         @Override
@@ -194,6 +189,7 @@ public class Ventana extends JFrame {
 
     };
         radioboton2.addMouseListener(eventoRaton2);//boton al que se le aplican los eventos
-}
+
+    }
 }
 
