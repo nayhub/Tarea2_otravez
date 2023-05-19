@@ -7,7 +7,6 @@ public class Ventana extends JFrame {
     private JPanel panel;
     private JPanel panel2;
     private JLabel etiqueta;
-    private JLabel etiqueta2;
     private JButton CocaCola;
     private JButton Sprite;
     private JButton Super8;
@@ -30,7 +29,6 @@ public class Ventana extends JFrame {
         CrearEtiquetas();
         CrearBotones();
 
-
     }
 
     private void CrearPaneles() {
@@ -39,7 +37,6 @@ public class Ventana extends JFrame {
         panel.setLayout(null);//desactiva el diseño para poder editar libremente las etiquetas
         //panel.setBackground(Color.white);//color del panel
         this.getContentPane().add(panel);//que se muestre el panel en la ventana
-
 
         panel2 = new JPanel();
 
