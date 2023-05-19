@@ -46,10 +46,10 @@ public class Ventana extends JFrame {
     //etiqueta1-texto
 
     private void CrearEtiquetas() {
-        etiqueta = new JLabel("Expendedor", SwingConstants.CENTER);//creacion de etiqueta de texto y ubicacion del texto
+        etiqueta = new JLabel("EXPENDEDOR", SwingConstants.CENTER);//creacion de etiqueta de texto y ubicacion del texto
         etiqueta.setBounds(250, 0, 300, 50);//medidas y ubicacion de la etiqueta
         etiqueta.setForeground(Color.black);//color de la letra
-        etiqueta.setFont(new Font("Comic Sans MS", 2, 50));//establecer la fuente del texto
+        etiqueta.setFont(new Font("Comic Sans MS", 2, 40));//establecer la fuente del texto
 
         panel.add(etiqueta);//mostrar etiqueta sobre el panel
 
