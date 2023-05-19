@@ -1,3 +1,5 @@
+import Tarea1.Moneda100;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -11,6 +13,11 @@ public class Ventana extends JFrame {
     private JButton Sprite;
     private JButton Super8;
     private JButton Snickers;
+
+    private JButton Moneda100;
+    private JButton Moneda500;
+    private JButton Moneda1000;
+    private JButton Moneda1500;
 
     private JButton boton2;
 
@@ -84,6 +91,34 @@ public class Ventana extends JFrame {
         ImageIcon botonSnickers = new ImageIcon("snickers.png");
         Snickers.setIcon(new ImageIcon(botonSnickers.getImage().getScaledInstance(Snickers.getWidth(),Snickers.getHeight(), Image.SCALE_SMOOTH)));
         panel.add(Snickers);
+
+        Moneda100 = new JButton();//creacion del boton
+        Moneda100.setBounds(50, 150, 70, 70);//medidas y ubicacion del boton
+        Moneda100.setEnabled(true);//establecemos el encendido del boton
+        ImageIcon botonMoneda100 = new ImageIcon("moneda100.jpg");
+        Moneda100.setIcon(new ImageIcon(botonMoneda100.getImage().getScaledInstance(Moneda100.getWidth(),Moneda100.getHeight(), Image.SCALE_SMOOTH)));
+        panel.add(Moneda100);
+
+        Moneda500 = new JButton();//creacion del boton
+        Moneda500.setBounds(50, 230, 70, 70);//medidas y ubicacion del boton
+        Moneda500.setEnabled(true);//establecemos el encendido del boton
+        ImageIcon botonMoneda500 = new ImageIcon("moneda500.jpg");
+        Moneda500.setIcon(new ImageIcon(botonMoneda500.getImage().getScaledInstance(Moneda500.getWidth(),Moneda500.getHeight(), Image.SCALE_SMOOTH)));
+        panel.add(Moneda500);
+
+        Moneda1000 = new JButton();//creacion del boton
+        Moneda1000.setBounds(50, 310, 70, 70);//medidas y ubicacion del boton
+        Moneda1000.setEnabled(true);//establecemos el encendido del boton
+        ImageIcon botonMoneda1000 = new ImageIcon("moneda1000.png");
+        Moneda1000.setIcon(new ImageIcon(botonMoneda1000.getImage().getScaledInstance(Moneda1000.getWidth(),Moneda1000.getHeight(), Image.SCALE_SMOOTH)));
+        panel.add(Moneda1000);
+
+        Moneda1500 = new JButton();//creacion del boton
+        Moneda1500.setBounds(50, 390, 70, 70);//medidas y ubicacion del boton
+        Moneda1500.setEnabled(true);//establecemos el encendido del boton
+        ImageIcon botonMoneda1500 = new ImageIcon("moneda1500.png");
+        Moneda1500.setIcon(new ImageIcon(botonMoneda1500.getImage().getScaledInstance(Moneda1500.getWidth(),Moneda1500.getHeight(), Image.SCALE_SMOOTH)));
+        panel.add(Moneda1500);
 
         //boton2-imagen
         boton2 = new JButton();
