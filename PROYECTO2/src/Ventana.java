@@ -87,7 +87,7 @@ public class Ventana extends JFrame {
 
         //boton2-imagen
         boton2 = new JButton();
-        boton2.setBounds(850, 100, 100, 40);
+        boton2.setBounds(50, 100, 100, 40);
         //boton2.setBackground(Color.BLUE);//establecer color de fondo
         ImageIcon botonPagar = new ImageIcon("boton.jfif");
         boton2.setIcon(new ImageIcon(botonPagar.getImage().getScaledInstance(boton2.getWidth(), boton2.getHeight(), Image.SCALE_SMOOTH)));//se establece el tamaño igual al del boton
