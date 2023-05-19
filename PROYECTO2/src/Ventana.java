@@ -5,8 +5,14 @@ import java.awt.event.MouseListener;
 
 public class Ventana extends JFrame {
     private JPanel panel;
+    private JPanel panel2;
     private JLabel etiqueta;
     private JLabel etiqueta2;
+    private JButton CocaCola;
+    private JButton Sprite;
+    private JButton Super8;
+    private JButton Snickers;
+
     private JRadioButton radioboton1;
     private JRadioButton radioboton2;
     private JRadioButton radioboton3;
@@ -41,6 +47,12 @@ public class Ventana extends JFrame {
         panel.setLayout(null);//desactiva el diseño para poder editar libremente las etiquetas
         //panel.setBackground(Color.white);//color del panel
         this.getContentPane().add(panel);//que se muestre el panel en la ventana
+
+
+        panel2 = new JPanel();
+
+        panel2.setLayout(null);
+
     }
     //etiqueta1-texto
 
@@ -52,28 +64,47 @@ public class Ventana extends JFrame {
 
         panel.add(etiqueta);//mostrar etiqueta sobre el panel
 
-        //etiqueta2-imagen
-        ImageIcon imagen = new ImageIcon("expendedorrr.jpg");
-        etiqueta2 = new JLabel(imagen);//se crea nueva etiqueta y en imageIcon se pone el nombre de la imagen
-        etiqueta2.setBounds(200, 50, 400, 400);//tamaño y ubicacion de la ETIQUETA
-        etiqueta2.setIcon(new ImageIcon(imagen.getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH)));//tamaño de la IMAGEN y escalado
-        panel.add(etiqueta2);
     }
 
     private void CrearBotones() {
         //boton1-texto
-        boton1 = new JButton("Click");//creacion del boton y su texto
-        boton1.setBounds(50, 50, 100, 40);//medidas y ubicacion del boton
-        boton1.setEnabled(true);//establecemos el encendido del boton
-        panel.add(boton1);
+        CocaCola = new JButton();//creacion del boton
+        CocaCola.setBounds(225, 50, 200, 150);//medidas y ubicacion del boton
+        CocaCola.setEnabled(true);//establecemos el encendido del boton
+        ImageIcon botonCocaCola = new ImageIcon("cocacola.png");
+        CocaCola.setIcon(new ImageIcon(botonCocaCola.getImage().getScaledInstance(CocaCola.getWidth(),CocaCola.getHeight(), Image.SCALE_SMOOTH)));
+        panel.add(CocaCola);
+
+        Sprite = new JButton();//creacion del boton
+        Sprite.setBounds(225, 225, 200, 150);//medidas y ubicacion del boton
+        Sprite.setEnabled(true);//establecemos el encendido del boton
+        ImageIcon botonSprite = new ImageIcon("Sprite.png");
+        Sprite.setIcon(new ImageIcon(botonSprite.getImage().getScaledInstance(Sprite.getWidth(),Sprite.getHeight(), Image.SCALE_SMOOTH)));
+        panel.add(Sprite);
+
+        Super8 = new JButton();//creacion del boton
+        Super8.setBounds(450, 50, 200, 150);//medidas y ubicacion del boton
+        Super8.setEnabled(true);//establecemos el encendido del boton
+        ImageIcon botonSuper8 = new ImageIcon("super8.png");
+        Super8.setIcon(new ImageIcon(botonSuper8.getImage().getScaledInstance(Super8.getWidth(),Super8.getHeight(), Image.SCALE_SMOOTH)));
+        panel.add(Super8);
+
+        Snickers = new JButton();//creacion del boton
+        Snickers.setBounds(450, 225, 200, 150);//medidas y ubicacion del boton
+        Snickers.setEnabled(true);//establecemos el encendido del boton
+        ImageIcon botonSnickers = new ImageIcon("snickers.png");
+        Snickers.setIcon(new ImageIcon(botonSnickers.getImage().getScaledInstance(Snickers.getWidth(),Snickers.getHeight(), Image.SCALE_SMOOTH)));
+        panel.add(Snickers);
 
         //boton2-imagen
         boton2 = new JButton();
-        boton2.setBounds(50, 100, 100, 40);
+        boton2.setBounds(850, 100, 100, 40);
         //boton2.setBackground(Color.BLUE);//establecer color de fondo
         ImageIcon botonPagar = new ImageIcon("boton.jfif");
         boton2.setIcon(new ImageIcon(botonPagar.getImage().getScaledInstance(boton2.getWidth(), boton2.getHeight(), Image.SCALE_SMOOTH)));//se establece el tamaño igual al del boton
+        boton2.setEnabled(false);
         panel.add(boton2);
+
 
     }
 
@@ -91,14 +122,14 @@ public class Ventana extends JFrame {
         grupoRadio.add(radioboton1);
         grupoRadio.add(radioboton2);
 
-        radioboton3 = new JRadioButton("CocaCola", false);
+        radioboton3 = new JRadioButton("Tarea1.CocaCola", false);
         radioboton3.setBounds(50, 250, 100, 40);
         radioboton3.setEnabled(false);//al estar en flase el boton esta desactivado
         panel.add(radioboton3);
 
 
 
-        radioboton4 = new JRadioButton("Sprite", false);
+        radioboton4 = new JRadioButton("Tarea1.Sprite", false);
         radioboton4.setBounds(50, 300, 100, 40);
         radioboton4.setEnabled(false);
         panel.add(radioboton4);
@@ -108,12 +139,12 @@ public class Ventana extends JFrame {
         grupoBebida.add(radioboton3);
         grupoBebida.add(radioboton4);
 
-        radioboton5 = new JRadioButton("Snicker", false);
+        radioboton5 = new JRadioButton("Tarea1.Snicker", false);
         radioboton5.setBounds(50, 350, 100, 40);
         radioboton5.setEnabled(false);
         panel.add(radioboton5);
 
-        radioboton6 = new JRadioButton("Super8", false);
+        radioboton6 = new JRadioButton("Tarea1.Super8", false);
         radioboton6.setBounds(50, 400, 100, 40);
         radioboton6.setEnabled(false);
         panel.add(radioboton6);
