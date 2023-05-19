@@ -13,14 +13,6 @@ public class Ventana extends JFrame {
     private JButton Super8;
     private JButton Snickers;
 
-    private JRadioButton radioboton1;
-    private JRadioButton radioboton2;
-    private JRadioButton radioboton3;
-    private JRadioButton radioboton4;
-    private JRadioButton radioboton5;
-    private JRadioButton radioboton6;
-
-    private JButton boton1;
     private JButton boton2;
 
     public Ventana() {//creacion de la ventana
@@ -37,7 +29,7 @@ public class Ventana extends JFrame {
         CrearPaneles();
         CrearEtiquetas();
         CrearBotones();
-        CrearBotonesRadio();
+
 
     }
 
@@ -67,7 +59,7 @@ public class Ventana extends JFrame {
     }
 
     private void CrearBotones() {
-        //boton1-texto
+        //boton1
         CocaCola = new JButton();//creacion del boton
         CocaCola.setBounds(225, 50, 200, 150);//medidas y ubicacion del boton
         CocaCola.setEnabled(true);//establecemos el encendido del boton
@@ -105,65 +97,14 @@ public class Ventana extends JFrame {
         boton2.setEnabled(false);
         panel.add(boton2);
 
+        eventoOyenteRaton();
 
     }
-
-    private void CrearBotonesRadio() {
-        radioboton1 = new JRadioButton("Bebida", false);//creacion de radio boton
-        radioboton1.setBounds(50, 150, 100, 40);//ubicacion y medidas del radio boton
-        panel.add(radioboton1);
-
-
-        radioboton2 = new JRadioButton("Dulce", false);
-        radioboton2.setBounds(50, 200, 100, 40);
-        panel.add(radioboton2);
-
-        ButtonGroup grupoRadio = new ButtonGroup();//se crea grupo para que solo se pueda elegir una opcion entre los rbotones que esten dentro del grupo
-        grupoRadio.add(radioboton1);
-        grupoRadio.add(radioboton2);
-
-        radioboton3 = new JRadioButton("Tarea1.CocaCola", false);
-        radioboton3.setBounds(50, 250, 100, 40);
-        radioboton3.setEnabled(false);//al estar en flase el boton esta desactivado
-        panel.add(radioboton3);
-
-
-
-        radioboton4 = new JRadioButton("Tarea1.Sprite", false);
-        radioboton4.setBounds(50, 300, 100, 40);
-        radioboton4.setEnabled(false);
-        panel.add(radioboton4);
-
-
-        ButtonGroup grupoBebida = new ButtonGroup();
-        grupoBebida.add(radioboton3);
-        grupoBebida.add(radioboton4);
-
-        radioboton5 = new JRadioButton("Tarea1.Snicker", false);
-        radioboton5.setBounds(50, 350, 100, 40);
-        radioboton5.setEnabled(false);
-        panel.add(radioboton5);
-
-        radioboton6 = new JRadioButton("Tarea1.Super8", false);
-        radioboton6.setBounds(50, 400, 100, 40);
-        radioboton6.setEnabled(false);
-        panel.add(radioboton6);
-
-        ButtonGroup grupoDulce = new ButtonGroup();
-        grupoDulce.add(radioboton5);
-        grupoDulce.add(radioboton6);
-
-        eventoOyenteRaton();//creacion de oyente de raton
-    }
-
     private void eventoOyenteRaton() {
         MouseListener eventoRaton = new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {//evento de cuando se hace click
-              radioboton3.setEnabled(true);//activa el boton al dar click al radioboton1
-              radioboton4.setEnabled(true);
-              radioboton5.setEnabled(false);//desactiva el boton al dar click al radioboton1
-              radioboton6.setEnabled(false);
+
             }
 
             @Override
@@ -186,15 +127,11 @@ public class Ventana extends JFrame {
             }
 
         };
-        radioboton1.addMouseListener(eventoRaton);//boton al que se le aplican los eventos
+        CocaCola.addMouseListener(eventoRaton);//boton al que se le aplican los eventos
 
     MouseListener eventoRaton2 = new MouseListener() {
         @Override
         public void mouseClicked(MouseEvent e) {//evento de cuando se hace click
-            radioboton3.setEnabled(false);
-            radioboton4.setEnabled(false);
-            radioboton5.setEnabled(true);
-            radioboton6.setEnabled(true);
 
         }
 
@@ -219,7 +156,65 @@ public class Ventana extends JFrame {
         }
 
     };
-        radioboton2.addMouseListener(eventoRaton2);//boton al que se le aplican los eventos
+        Sprite.addMouseListener(eventoRaton2);//boton al que se le aplican los eventos
+
+        MouseListener eventoRaton3 = new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {//evento de cuando se hace click
+
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {//cuando se clickea pero sin soltar el click
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {//cuando se suelta el click
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {//pasar el mouse por el boton
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {//sacar el mouse de sobre el boton
+
+            }
+
+        };
+        Super8.addMouseListener(eventoRaton3);//boton al que se le aplican los eventos
+
+        MouseListener eventoRaton4 = new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {//evento de cuando se hace click
+
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {//cuando se clickea pero sin soltar el click
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {//cuando se suelta el click
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {//pasar el mouse por el boton
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {//sacar el mouse de sobre el boton
+
+            }
+
+        };
+        Snickers.addMouseListener(eventoRaton4);//boton al que se le aplican los eventos
 
     }
 }
