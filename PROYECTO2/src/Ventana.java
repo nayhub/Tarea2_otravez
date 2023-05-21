@@ -2,6 +2,7 @@ import Tarea1.Moneda100;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -66,6 +67,8 @@ public class Ventana extends JFrame {
         //boton1
         CocaCola = new JButton();//creacion del boton
         CocaCola.setBounds(225, 50, 200, 150);//medidas y ubicacion del boton
+        CocaCola.addActionListener(e -> System.out.println("HOLAAAAAA"));
+
         CocaCola.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonCocaCola = new ImageIcon("cocacola.png");
         CocaCola.setIcon(new ImageIcon(botonCocaCola.getImage().getScaledInstance(CocaCola.getWidth(),CocaCola.getHeight(), Image.SCALE_SMOOTH)));
@@ -136,6 +139,10 @@ public class Ventana extends JFrame {
         MouseListener eventoRaton = new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {//evento de cuando se hace click
+                if(e.getSource()==CocaCola){
+                    System.out.println("El precio de CocaCola es 500 pesos");
+
+                }
 
             }
 
