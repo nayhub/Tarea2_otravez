@@ -76,6 +76,8 @@ public class Ventana extends JFrame {
 
         Sprite = new JButton();//creacion del boton
         Sprite.setBounds(225, 225, 200, 150);//medidas y ubicacion del boton
+        Sprite.addActionListener(e -> System.out.println("Esto es una Sprite"));
+
         Sprite.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonSprite = new ImageIcon("Sprite.png");
         Sprite.setIcon(new ImageIcon(botonSprite.getImage().getScaledInstance(Sprite.getWidth(),Sprite.getHeight(), Image.SCALE_SMOOTH)));
@@ -83,6 +85,8 @@ public class Ventana extends JFrame {
 
         Super8 = new JButton();//creacion del boton
         Super8.setBounds(450, 50, 200, 150);//medidas y ubicacion del boton
+        Super8.addActionListener(e -> System.out.println("Esto es un super8"));
+
         Super8.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonSuper8 = new ImageIcon("super8.png");
         Super8.setIcon(new ImageIcon(botonSuper8.getImage().getScaledInstance(Super8.getWidth(),Super8.getHeight(), Image.SCALE_SMOOTH)));
@@ -90,6 +94,8 @@ public class Ventana extends JFrame {
 
         Snickers = new JButton();//creacion del boton
         Snickers.setBounds(450, 225, 200, 150);//medidas y ubicacion del boton
+        Snickers.addActionListener(e -> System.out.println("Esto es un Snicker"));
+
         Snickers.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonSnickers = new ImageIcon("snickers.png");
         Snickers.setIcon(new ImageIcon(botonSnickers.getImage().getScaledInstance(Snickers.getWidth(),Snickers.getHeight(), Image.SCALE_SMOOTH)));
@@ -97,6 +103,8 @@ public class Ventana extends JFrame {
 
         Moneda100 = new JButton();//creacion del boton
         Moneda100.setBounds(50, 150, 70, 70);//medidas y ubicacion del boton
+        Moneda100.addActionListener(e -> System.out.println("Has insertado una moneda de 100 pesos"));
+
         Moneda100.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonMoneda100 = new ImageIcon("moneda100.jpg");
         Moneda100.setIcon(new ImageIcon(botonMoneda100.getImage().getScaledInstance(Moneda100.getWidth(),Moneda100.getHeight(), Image.SCALE_SMOOTH)));
@@ -104,6 +112,8 @@ public class Ventana extends JFrame {
 
         Moneda500 = new JButton();//creacion del boton
         Moneda500.setBounds(50, 230, 70, 70);//medidas y ubicacion del boton
+        Moneda500.addActionListener(e -> System.out.println("Has insertado una moneda de 500 pesos"));
+
         Moneda500.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonMoneda500 = new ImageIcon("moneda500.jpg");
         Moneda500.setIcon(new ImageIcon(botonMoneda500.getImage().getScaledInstance(Moneda500.getWidth(),Moneda500.getHeight(), Image.SCALE_SMOOTH)));
@@ -111,6 +121,8 @@ public class Ventana extends JFrame {
 
         Moneda1000 = new JButton();//creacion del boton
         Moneda1000.setBounds(50, 310, 70, 70);//medidas y ubicacion del boton
+        Moneda1000.addActionListener(e -> System.out.println("Has insertado una moneda de 1000 pesos"));
+
         Moneda1000.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonMoneda1000 = new ImageIcon("moneda1000.png");
         Moneda1000.setIcon(new ImageIcon(botonMoneda1000.getImage().getScaledInstance(Moneda1000.getWidth(),Moneda1000.getHeight(), Image.SCALE_SMOOTH)));
@@ -118,6 +130,8 @@ public class Ventana extends JFrame {
 
         Moneda1500 = new JButton();//creacion del boton
         Moneda1500.setBounds(50, 390, 70, 70);//medidas y ubicacion del boton
+        Moneda1500.addActionListener(e -> System.out.println("Has insertado una moneda de 1500 pesos"));
+
         Moneda1500.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonMoneda1500 = new ImageIcon("moneda1500.png");
         Moneda1500.setIcon(new ImageIcon(botonMoneda1500.getImage().getScaledInstance(Moneda1500.getWidth(),Moneda1500.getHeight(), Image.SCALE_SMOOTH)));
