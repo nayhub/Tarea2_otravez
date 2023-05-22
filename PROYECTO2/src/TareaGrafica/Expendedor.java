@@ -3,7 +3,7 @@ package TareaGrafica;
 import javax.swing.*;
 import java.awt.*;
 
-public class Expendedor extends JPanel {
+/*public class Expendedor extends JPanel {
     private Deposito coca;
     private Deposito sprite;
     private Deposito snicker;
@@ -15,4 +15,4 @@ public class Expendedor extends JPanel {
     public static final int SNICKER = 3;
     public static final int SUPER8 = 4;
 
-}
+}*/

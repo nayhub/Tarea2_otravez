@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 import java.awt.*;
 
-class Deposito extends JPanel{
+/*class Deposito extends JPanel{
     private ArrayList<Producto> al;
     int x, y, escala;
     public Deposito(int posx, int posy, int tescale){
@@ -36,4 +36,4 @@ class Deposito extends JPanel{
             b.paint(g);
         }
     }
-}
+}*/

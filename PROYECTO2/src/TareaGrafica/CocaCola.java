@@ -2,7 +2,7 @@ package TareaGrafica;
 
 import javax.swing.*;
 import java.awt.*;
-public class CocaCola extends Producto {
+/*public class CocaCola extends Producto {
     public CocaCola(int numSerie, int x, int y, int escala) {
         super(numSerie, x, y, escala);
     }
@@ -22,4 +22,4 @@ public class CocaCola extends Producto {
         JBoton.setIcon(new ImageIcon(botonCocaCola.getImage().getScaledInstance(JBoton.getWidth(),JBoton.getHeight(), Image.SCALE_SMOOTH)));
         setJButton(JBoton);
     }
-}
+}*/

@@ -2,7 +2,7 @@ package TareaGrafica;
 
 import javax.swing.*;
 import java.awt.*;
-public class Super8 extends Producto {
+/*public class Super8 extends Producto {
     public Super8(int numSerie, int x, int y, int escala) {
         super(numSerie, x, y, escala);
     }
@@ -22,4 +22,4 @@ public class Super8 extends Producto {
         JBoton.setIcon(new ImageIcon(botonSuper8.getImage().getScaledInstance(JBoton.getWidth(),JBoton.getHeight(), Image.SCALE_SMOOTH)));
         setJButton(JBoton);
     }
-}
+}*/

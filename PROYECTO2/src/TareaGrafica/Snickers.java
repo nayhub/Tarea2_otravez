@@ -2,7 +2,7 @@ package TareaGrafica;
 
 import javax.swing.*;
 import java.awt.*;
-public class Snickers extends Producto {
+/*public class Snickers extends Producto {
     public Snickers(int numSerie, int x, int y, int escala) {
         super(numSerie, x, y, escala);
     }
@@ -22,4 +22,4 @@ public class Snickers extends Producto {
         JBoton.setIcon(new ImageIcon(botonSnickers.getImage().getScaledInstance(JBoton.getWidth(),JBoton.getHeight(), Image.SCALE_SMOOTH)));
         setJButton(JBoton);
     }
-}
+}*/

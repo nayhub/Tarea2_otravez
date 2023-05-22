@@ -5,7 +5,7 @@ import java.awt.*;
 
 
 
-public class Sprite extends Producto {
+/*public class Sprite extends Producto {
     public Sprite(int numSerie, int x, int y, int escala) {
         super(numSerie, x, y, escala);
     }
@@ -25,4 +25,4 @@ public class Sprite extends Producto {
         JBoton.setIcon(new ImageIcon(botonSprite.getImage().getScaledInstance(JBoton.getWidth(),JBoton.getHeight(), Image.SCALE_SMOOTH)));
         setJButton(JBoton);
     }
-}
+}*/
