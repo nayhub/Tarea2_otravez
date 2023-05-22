@@ -1,12 +1,13 @@
 import Tarea1.Moneda100;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import javax.swing.JPanel;
 
 public class Ventana extends JFrame {
+
     private JPanel panel;
     private JPanel panel2;
     private JLabel etiqueta;
@@ -31,15 +32,14 @@ public class Ventana extends JFrame {
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);//al cerrar la ventana el programa deja de ejecutarse
     }
-
     private void Componentes() {
         CrearPaneles();
         CrearEtiquetas();
         CrearBotones();
 
     }
-
     private void CrearPaneles() {
+
         panel = new JPanel();//creacion de un panel
 
         panel.setLayout(null);//desactiva el diseño para poder editar libremente las etiquetas
@@ -67,7 +67,7 @@ public class Ventana extends JFrame {
         //boton1
         CocaCola = new JButton();//creacion del boton
         CocaCola.setBounds(225, 50, 200, 150);//medidas y ubicacion del boton
-        CocaCola.addActionListener(e -> System.out.println("HOLAAAAAA"));
+        CocaCola.addActionListener(e -> System.out.println("El valor de la CocaCola es de 1000 pesos"));
 
         CocaCola.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonCocaCola = new ImageIcon("cocacola.png");
@@ -76,7 +76,7 @@ public class Ventana extends JFrame {
 
         Sprite = new JButton();//creacion del boton
         Sprite.setBounds(225, 225, 200, 150);//medidas y ubicacion del boton
-        Sprite.addActionListener(e -> System.out.println("Esto es una Sprite"));
+        Sprite.addActionListener(e -> System.out.println("El valor de la Sprite es de 1000 pesos"));
 
         Sprite.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonSprite = new ImageIcon("Sprite.png");
@@ -85,7 +85,7 @@ public class Ventana extends JFrame {
 
         Super8 = new JButton();//creacion del boton
         Super8.setBounds(450, 50, 200, 150);//medidas y ubicacion del boton
-        Super8.addActionListener(e -> System.out.println("Esto es un super8"));
+        Super8.addActionListener(e -> System.out.println("El valor del Super8 es de 500 pesos"));
 
         Super8.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonSuper8 = new ImageIcon("super8.png");
@@ -94,7 +94,7 @@ public class Ventana extends JFrame {
 
         Snickers = new JButton();//creacion del boton
         Snickers.setBounds(450, 225, 200, 150);//medidas y ubicacion del boton
-        Snickers.addActionListener(e -> System.out.println("Esto es un Snicker"));
+        Snickers.addActionListener(e -> System.out.println("El valor de los snickers es de 500 pesos"));
 
         Snickers.setEnabled(true);//establecemos el encendido del boton
         ImageIcon botonSnickers = new ImageIcon("snickers.png");
@@ -154,7 +154,7 @@ public class Ventana extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {//evento de cuando se hace click
                 if(e.getSource()==CocaCola){
-                    System.out.println("El precio de CocaCola es 500 pesos");
+                    System.out.println("Por favor ingrese una moneda");
 
                 }
 
@@ -185,6 +185,7 @@ public class Ventana extends JFrame {
     MouseListener eventoRaton2 = new MouseListener() {
         @Override
         public void mouseClicked(MouseEvent e) {//evento de cuando se hace click
+
 
         }
 
