@@ -1,4 +1,5 @@
 package Tarea1;
+import java.awt.*;
 
 /**
  superclase abstracta para Tarea1.CocaCola y Tarea1.Sprite y subclase de Producto
